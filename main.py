@@ -1,17 +1,4 @@
 # This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
 # task 1
 name = input("Enter your name: ")
 surname = input("Enter your surname: ")
@@ -55,6 +42,25 @@ if number % number2 == 0:
 else:
   result = "not devided"
 print("The number is", result)
+#task 6
+side1 = float(input("Enter the length of side 1: "))
+side2 = float(input("Enter the length of side 2: "))
+side3 = float(input("Enter the length of side 3: "))
+is_triange = "true";
+
+if side1 == side2 == side3:
+    triangle_type = "Equilateral"
+elif side1 == side2 or side1 == side3 or side2 == side3:
+    triangle_type = "Isosceles"
+else:
+    triangle_type = "Scalene"
+
+if side1 + side2 > side3 or side1 + side3 > side2 or side2 + side3 > side1 :
+  is_triange = "false"
+
+print("The triangle is:", triangle_type)
+print("Is triangle: ", is_triange)
+
 #task 7
 num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
