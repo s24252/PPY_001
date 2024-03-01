@@ -9,15 +9,69 @@ def print_hi(name):
     print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
-
+# task 1
 name = input("Enter your name: ")
 surname = input("Enter your surname: ")
 age = input("Enter your age: ")
 print("Name: ", name)
 print("Surame: ", surname)
 print("Age: ", age)
+# task 2
+fahrenheit = float(input("Enter temperature in Fahrenheit: "))
+
+celsius = (fahrenheit - 32) * 5/9
+
+print("Temerature in Celcius: ", celsius)
+#task 3
+score = float(input("Enter your score: "))
+
+if score >= 90:
+    grade = "5"
+elif score >= 80:
+    grade = "5"
+elif score >= 70:
+    grade = "4"
+elif score >= 60:
+    grade = "4"
+elif score >= 50:
+    grade = "project"
+elif score >= 30:
+    grade = "test"
+elif score >= 20:
+    grade = "work in class"
+else:
+    grade = "2"
+
+print("Your grade is:", grade)
+# task 4
+number = int(input("Enter a number: "))
+number2 = int(input("Enter second number"))
+
+if number % number2 == 0:
+  result = "diveded"
+else:
+  result = "not devided"
+print("The number is", result)
+#task 7
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+operation = input("Enter the operation (+, -, *, /): ")
+
+if operation == "+":
+    result = num1 + num2
+elif operation == "-":
+    result = num1 - num2
+elif operation == "*":
+    result = num1 * num2
+elif operation == "/":
+    if num2 == 0:
+      result = "Invalid operation"
+    else:
+      result = num1 / num2
+else:
+    result = "Invalid operation"
+
+print("Result:", result)
